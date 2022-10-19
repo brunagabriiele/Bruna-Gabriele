@@ -2,83 +2,177 @@
 <html lang="pt-br">
 <!-- Define a utilização do portugês Brasil para a identificação de outros sites -->
 
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Força o navegador Edge a executar a versão mais recente do HTML -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Força o navegador Edge a executar a versão mais recente do HTML -->
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Coleta a largura do dispositivo permitindo a reponsividade da página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Coleta a largura do dispositivo permitindo a reponsividade da página -->
 
-        <meta charset="UTF-8">
-        <title>Minha Bibliografia</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <div id="capa" class="background-ps">
-            <div id="row-capa">
+    <meta charset="UTF-8">
+    <title>Minha Bibliografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="Dark-light"> 
+            <p> Dark </p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <ul>
+            <a href="#"> <li> <h2> Home </h2> </li> </a>
+            <a href="#"> <li> <h2> Biografia </h2> </li> </a>
+            <a href="#"> <li> <h2> Portfólio </h2> </li> </a>
+            <a href="#"> <li> <h2> Contato </h2> </li> </a>
+        </ul>
+    </nav>
+
+    <div id="capa" class="background-ps">
+        <div id="row-capa">
             <img src="yo.jpg" alt="Foto do GitHub">
 
             <h1>Lorem Ipsum é simplesmente uma </h1>
         </div>
+    </div>
+
+    <div id="biografia" class="background-sp">
+        <div>
+            <h2>texto</h2>
         </div>
 
-        <div id="biografia" class="background-sp">
+        <div>
             <div>
-                <h2>texto</h2>
+                <img src="logo_instituicao.png" alt="Logo da Instituição">
+                <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
             </div>
 
-            <div>
-                <div>
-                    <img src="logo_instituicao.png" alt="Logo da Instituição">
-                    <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
+            <figure>
+                <img src="logo_instituicao.png" alt="Logo da Instituição">
+                <figcaption>
+                    Curso Técnico em Informática Integrado ao Ensino Médio
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div id="portfolio" class="background-ps">
+        <div id="tecnologia">
+            <select name="" id="tec-ops">
+
+                <option value=""> Tecnologia </option>
+                <option value=""> Sustentabilidade </option>
+                <option value=""> Educação </option>
+                <option value=""> Empreendedorismo </option>
+
+            </select>
+
+            <div class="row">
+                <div class="col">
+                    <div class="topo">
+.                <div>
+                    <div>
+                        <div class="col center">
+                            <div class="topo"></div>
+                        <input type="checkbox" name="HTML">
+                        <label for="HTML"> HTML </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="CSS">
+                        <label for="CSS"> CSS </label>
+                    </div>
+                    <div>
+                            <div class="topo"></div>
+                        <input type="checkbox" name="JS">
+                        <label for="JS"> JavaScript </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Vue">
+                        <label for="Vue"> Vue Js </label>
+                    </div>
+                    <div>
+                            <div class="topo"></div
+                        <input type="checkbox" name="Python">
+                        <label for="Python"> Python </label>
+                    </div>
+                    <div>
+                        <div class="col">
+                        <input type="checkbox" name="Django">
+                        <label for="Django"> Django </label>
+                    </div>
                 </div>
-
-                <figure>
-                    <img src="logo_instituicao.png" alt="Logo da Instituição">
-                    <figcaption>
-                        Curso Técnico em Informática Integrado ao Ensino Médio
-                    </figcaption>
-                </figure>
             </div>
         </div>
+    </div>
         
-        <div id="portfólio" class="background-ps">
-            <div>Tecnologias
-                <select name="" id="tec-ops">
+    </div>
 
-                </select>
+    <div id="projetos">
+        <h2> Projetos </h2>
+        <div id="slider">
+        <figure>
+            <img src="" alt="">
+            <figcaption>
+                <h2> Nome </h2>
+                <ul> 
+                    <li> Tags </li>
+                </ul>
+                <p> Descrição </p> 
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="" alt="">
+            <figcaption>
+                <h2> Nome </h2>
+                <ul> 
+                    <li> Tags </li>
+                </ul>
+                <p> Descrição </p> 
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="" alt="">
+            <figcaption>
+                <h2> Nome </h2>
+                <ul> 
+                    <li> Tags </li>
+                </ul>
+                <p> Descrição </p> 
+            </figcaption>
+        </figure>
+        </div>
+    </div>
 
+        </div>
+
+
+    <div id="contato" class="background-sp">
+
+        <form action="#">
+            <div>
+                <input type="text" placeholder="Nome" />
+                <input type="text" placeholder="Sobrenome" />
+                <input type="email" name="" id="" placeholder="E-mail">
+                <input type="number" name="" id="" placeholder="Contato">
             </div>
 
-            <div>Projetos</div>
+            <select name="" id="">
 
-        </div>
+            </select>
+            <p>checkbox</p>
+            <textarea name="" id="" placeholder="Escreva sua necessidade..."></textarea>
 
+            <button type="submit">ENVIAR</button>
+        </form>
 
-        <div id="contato" class="background-sp">
-
-            <form action="#">
-                <div>
-                    <input type="text" placeholder="Nome" />
-                    <input type="text" placeholder="Sobrenome" />
-                    <input type="email" name="" id="" placeholder="E-mail">
-                    <input type="number" name="" id="" placeholder="Contato">
-                </div>
-
-                <select name="" id="">
-
-                </select>
-                <p>checkbox</p>
-                <textarea name="" id="" placeholder="Escreva sua necessidade..."></textarea>
-
-                <button type="submit">ENVIAR</button>
-            </form>
-
-        </div>
+    </div>
 
 
 
-    </body>
+
+</body>
 
 </html>
