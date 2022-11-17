@@ -12,14 +12,39 @@
     <meta charset="UTF-8">
     <title>Minha Bibliografia</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <script>
 
-<body>
-    <nav>
-        <div id="Dark-light"> 
-            <p> Dark </p>
+        function darkMode(){
+            let body = document.getElementById('body');
+            let texto = document.getElementById('dark-text');
+
+            if (texto.innerHTML == "Dark") {
+                body.classList.remove('darkmode');
+                body.classList.add('lightmode');
+                texto.innerHTML = "Light";
+            }else {
+                body.classList.add('darkmode');
+                body.classList.remove('lightmode');
+                texto.innerHTML = "Dark";
+            }  
+        }
+
+        function tempo() {
+            let tempo = new Date().getHours();
+            console.log(tempo);
+
+            if (tempo <= 18 && tempo >= 7){
+                darkMode();
+            }
+        }
+
+    </script>
+</head>
+<body id="body" class="darkmode" onload="tempo()">
+    <nav id="menu">
+        <p div id="Dark-light"> Dark </p>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" onclick="darkMode()">
                 <span class="slider round"></span>
             </label>
         </div>
@@ -33,9 +58,9 @@
 
     <div id="capa" class="background-ps">
         <div id="row-capa">
-            <img src="yo.jpg" alt="Foto do GitHub">
+            <img src="/img/yo.jpg" alt="Foto do GitHub">
 
-            <h1>Lorem Ipsum é simplesmente uma </h1>
+            <h1>Lorem Ipsum é simplesmente uma maravilha! </h1>
         </div>
     </div>
 
@@ -46,12 +71,12 @@
 
         <div>
             <div>
-                <img src="logo_instituicao.png" alt="Logo da Instituição">
+                <img src="" alt="Logo da Instituição">
                 <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
             </div>
 
             <figure>
-                <img src="logo_instituicao.png" alt="Logo da Instituição">
+                <img src="" alt="Logo da Instituição">
                 <figcaption>
                     Curso Técnico em Informática Integrado ao Ensino Médio
                 </figcaption>
@@ -73,7 +98,7 @@
             <div class="row">
                 <div class="col">
                     <div class="topo">
-.                <div>
+                 <div>
                     <div>
                         <div class="col center">
                             <div class="topo"></div>
@@ -94,7 +119,7 @@
                         <label for="Vue"> Vue Js </label>
                     </div>
                     <div>
-                            <div class="topo"></div
+                            <div class="topo"></div>
                         <input type="checkbox" name="Python">
                         <label for="Python"> Python </label>
                     </div>
